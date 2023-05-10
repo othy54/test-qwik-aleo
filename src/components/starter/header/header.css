@@ -1,0 +1,25 @@
+.menu-wrapper {
+    display:flex;
+    gap: 56px;
+
+    & > li {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+
+      &::after {
+        content: " ";
+        background-color: white;
+        -webkit-mask: url(/img/chevron-down.svg) no-repeat center;
+        mask: url(/img/chevron-down.svg) no-repeat center;
+        width: 14px;
+        height: 8px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(calc(100% + 10px), -50%);
+      }
+    }
+  }
