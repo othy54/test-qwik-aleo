@@ -53,7 +53,6 @@ export default component$(() => {
                   src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683726098/denis-hero-home.png"
                   class="absolute -bottom-32"
                   priority={true}
-                  aspectRatio={1490 / 1384}
                   breakpoints={[350, 700, 745, 1490]}
                   height={720}
                   width={669}
