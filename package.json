@@ -41,6 +41,8 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
-    "@unpic/qwik": "^0.0.17"
+    "@unpic/qwik": "^0.0.17",
+    "lottie-web": "^5.11.0",
+    "motion": "^10.15.5"
   }
 }

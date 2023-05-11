@@ -1,0 +1,15 @@
+.wrapper-content {
+    grid-template-rows: 0;
+    display: grid;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.item--active .wrapper-content {
+    grid-template-rows: 1fr;
+}
+
+.column-lottie {
+    background: rgba(162, 204, 238, .1);
+    box-shadow: inset 1px 1px 4px rgba(162, 204, 238, .4);
+}
