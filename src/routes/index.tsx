@@ -4,7 +4,7 @@ import { Image } from "@unpic/qwik";
 import styles from "./home.css?inline";
 
 import Header from "~/components/starter/header/header";
-// import Lotties from "~/components/lotties/lotties.module";
+import Lotties from "~/components/lotties/lotties.module";
 // import Footer from '~/components/starter/footer/footer';
 
 export default component$(() => {
@@ -303,12 +303,12 @@ export default component$(() => {
 
           <div class="row">
             <div class="container">
-              {/* <Lotties
+              <Lotties
                 listLotties={state.lottieVisibility.listLotties}
                 list={state.lottieVisibility.list}
                 title={state.lottieVisibility.title}
                 label={"lottie-1"}
-              /> */}
+              />
             </div>
           </div>
 

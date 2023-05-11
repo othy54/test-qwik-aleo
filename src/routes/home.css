@@ -1,6 +1,6 @@
 .section-hero {
     border-radius: 0 0 195px 0;
-    background-image: url("/img/bg-distorsion-home.svg");
+    /* background-image: url("/img/bg-distorsion-home.svg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
