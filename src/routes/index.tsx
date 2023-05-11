@@ -145,7 +145,7 @@ export default component$(() => {
                 </div>
               </div>
               <div class="col-span-12 lg:col-span-6 relative">
-                <Image
+                {/* <Image
                   src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto,q_60/v1683726098/denis-hero-home.png"
                   class="absolute -bottom-32"
                   priority={true}
@@ -154,7 +154,7 @@ export default component$(() => {
                   width={674}
                   sizes="(max-width:768px) 350px, (max-width:1536px) 600px, 745px"
                   alt="denis"
-                />
+                /> */}
               </div>
             </div>
           </div>
