@@ -45,7 +45,7 @@ export default component$<ItemProps>((props) => {
     }
 
     const anim = () => {
-      let animation = animate(
+      const animation = animate(
         "." + props.label + "-item-" + step.value + " .spin-progress",
         { strokeDashoffset: 0 },
         { duration: 5, easing: "linear" }
