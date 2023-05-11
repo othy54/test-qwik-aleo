@@ -148,10 +148,9 @@ export default component$(() => {
                 <Image
                   src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683726098/denis-hero-home.png"
                   class="absolute -bottom-32"
-                  priority={true}
-                  breakpoints={[350, 700, 745, 1490]}
-                  height={669}
-                  width={720}
+                  breakpoints={[350, 700, 674, 1490]}
+                  height={626}
+                  width={674}
                   sizes="(max-width:768px) 350px, (max-width:1536px) 600px, 745px"
                   alt="denis"
                 />
