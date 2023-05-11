@@ -148,6 +148,7 @@ export default component$(() => {
                 <Image
                   src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_webp,q_60/v1683726098/denis-hero-home.png"
                   class="absolute -bottom-32"
+                  priority={true}
                   breakpoints={[350, 700, 674, 1490]}
                   height={626}
                   width={674}
