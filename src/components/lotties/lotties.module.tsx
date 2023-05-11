@@ -28,7 +28,7 @@ export default component$<ItemProps>((props) => {
 
 
   useVisibleTask$(() => {
-    var animationLottie: any = lottie.loadAnimation;
+    let animationLottie: any = lottie.loadAnimation;
     document
       .querySelector("." + props.label + "-item-0")
       ?.classList.add("item--active");
@@ -45,7 +45,7 @@ export default component$<ItemProps>((props) => {
     }
 
     const anim = () => {
-      var animation = animate(
+      let animation = animate(
         "." + props.label + "-item-" + step.value + " .spin-progress",
         { strokeDashoffset: 0 },
         { duration: 5, easing: "linear" }
