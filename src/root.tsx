@@ -20,7 +20,7 @@ export default component$(() => {
     <QwikCityProvider>
       <head>
         <meta charSet="utf-8" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="preload" href="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto,q_60/v1683726098/denis-hero-home.png" as="image" media="(max-width: 768px)"></link>
         <RouterHead />
       </head>
       <body lang="fr">
