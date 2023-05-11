@@ -2,6 +2,7 @@ import {
   component$,
   useStylesScoped$,
   useVisibleTask$,
+  useSignal,
 } from "@builder.io/qwik";
 import styles from "./lotties.css?inline";
 import lottie from "lottie-web";
@@ -22,21 +23,29 @@ interface ItemProps {
 
 export default component$<ItemProps>((props) => {
   useStylesScoped$(styles);
+
+  const step = useSignal(0);
+
+
   useVisibleTask$(() => {
+    var animationLottie: any = lottie.loadAnimation;
     document
       .querySelector("." + props.label + "-item-0")
       ?.classList.add("item--active");
-    const animation = lottie.loadAnimation({
-      container: document.querySelector("." + props.label + "")!,
-      renderer: "svg",
-      loop: false,
-      autoplay: true,
-      // path: `/lotties/${props.listLotties[step.value]}.json`
-      path: "/lotties/ameliore-image.json",
-    });
+
+    const loadAnimation = () => {
+      animationLottie = lottie.loadAnimation({
+        container: document.querySelector("." + props.label)!,
+        renderer: "svg",
+        loop: false,
+        autoplay: true,
+        // path: `/lotties/${props.listLotties[step.value]}.json`
+        path: "/lotties/ameliore-image.json",
+      });
+    }
 
     const anim = () => {
-      const animation = animate(
+      var animation = animate(
         "." + props.label + "-item-" + step.value + " .spin-progress",
         { strokeDashoffset: 0 },
         { duration: 5, easing: "linear" }
@@ -69,6 +78,16 @@ export default component$<ItemProps>((props) => {
         }
       });
     };
+
+    const reloadAnimation = () => {
+      animationLottie.destroy()
+      setTimeout(() => {
+        loadAnimation()
+      }, 500)
+    }
+
+    loadAnimation()
+    anim()
   });
 
   //   const state = useStore({
