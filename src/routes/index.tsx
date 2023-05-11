@@ -113,7 +113,7 @@ export default component$(() => {
           <div class="row">
             <div class="grid grid-cols-12">
               <div class="col-span-12 lg:col-span-6 relative pb-[220px] lg:pb-[100px]">
-                <div class="mt-52">
+                <div class="mt-40 lg:mt-52">
                   <h1 class="uppercase text-xs font-extrabold tracking-[0.12em] text-white">
                     L'agence de communication des Pros
                   </h1>
