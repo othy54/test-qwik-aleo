@@ -310,24 +310,36 @@ export default component$(() => {
                       Attache ta ceinture !
                     </p>
                   </div>
-                  {/* <Belt client:visible /> */}
                   <div class="relative w-fit-content">
-                    <img
+                    {/* <img
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                       src="/img/belt.png"
                       alt="belt off"
                       loading="lazy"
                       width={137}
                       height={27}
+                    /> */}
+                    <Image
+                      src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683895509/belt_uzbyzw.png"
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      height={27}
+                      width={137}
+                      alt="belt off"
                     />
-
-                    <img
+                    {/* <img
                       class="relative z-[2] belt-on opacity-0"
                       src="/img/belt-on.png"
                       alt="belt off"
                       loading="lazy"
                       width={169}
                       height={69}
+                    /> */}
+                    <Image
+                      src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683895509/belt-on_lnmd5t.png"
+                      class="relative z-[2] belt-on opacity-0"
+                      height={69}
+                      width={169}
+                      alt="belt"
                     />
                   </div>
                 </div>
