@@ -6,6 +6,13 @@ import {
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 
+import "@fontsource/nunito/400.css";
+import "@fontsource/nunito/500.css";
+import "@fontsource/nunito/700.css";
+import "@fontsource/nunito/800.css";
+import "@fontsource/nunito/900.css";
+import "@fontsource/nunito/900-italic.css";
+
 import "./global.css";
 
 export default component$(() => {
@@ -20,7 +27,12 @@ export default component$(() => {
     <QwikCityProvider>
       <head>
         <meta charSet="utf-8" />
-        <link rel="preload" href="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto,q_60/v1683726098/denis-hero-home.png" as="image" media="(max-width: 768px)"></link>
+        <link
+          rel="preload"
+          href="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto,q_60/v1683726098/denis-hero-home.png"
+          as="image"
+          media="(max-width: 768px)"
+        ></link>
         <RouterHead />
       </head>
       <body lang="fr">

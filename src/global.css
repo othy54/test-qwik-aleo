@@ -10,7 +10,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Nunito';
   font-style: italic;
   font-weight: 900;
@@ -56,4 +56,4 @@ body {
   font-weight: 900;
   font-display: swap;
   src: url('/fonts/Nunito-Black.ttf') format('truetype');
-}
+} */
