@@ -205,7 +205,7 @@ export default component$(() => {
                   breakpoints={[350, 700, 674, 1490]}
                   height={626}
                   width={674}
-                  sizes="(max-width:768px) 350px, (max-width:1536px) 600px, 745px"
+                  sizes="(max-width:768px) 350px, (max-width:1536px) 600px, (max-width:1920px) 674px, 1490px"
                   alt="denis"
                 />
               </div>
