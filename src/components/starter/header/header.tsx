@@ -24,9 +24,7 @@ export default component$(() => {
           <button class="hidden lg:inline-block btn-primary">
             Contacte-nous
           </button>
-          <button class="hidden lg:inline-block btn-tertiary-white">
-            Rappel gratuit
-          </button>
+          <button class="btn-tertiary-white">Rappel gratuit</button>
         </div>
       </div>
     </header>

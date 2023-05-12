@@ -26,7 +26,6 @@ export default component$<ItemProps>((props) => {
 
   const step = useSignal(0);
 
-
   useVisibleTask$(() => {
     let animationLottie: any = lottie.loadAnimation;
     document
@@ -39,10 +38,9 @@ export default component$<ItemProps>((props) => {
         renderer: "svg",
         loop: false,
         autoplay: true,
-        // path: `/lotties/${props.listLotties[step.value]}.json`
-        path: "/lotties/ameliore-image.json",
+        path: `/lotties/${props.listLotties![step.value]}.json`,
       });
-    }
+    };
 
     const anim = () => {
       const animation = animate(
@@ -80,23 +78,15 @@ export default component$<ItemProps>((props) => {
     };
 
     const reloadAnimation = () => {
-      animationLottie.destroy()
+      animationLottie.destroy();
       setTimeout(() => {
-        loadAnimation()
-      }, 500)
-    }
+        loadAnimation();
+      }, 500);
+    };
 
-    loadAnimation()
-    anim()
+    loadAnimation();
+    anim();
   });
-
-  //   const state = useStore({
-  //     animationLottie: $(() => {
-  //       lottie.loadAnimation({
-  //         container: "",
-  //       });
-  //     }),
-  //   });
 
   return (
     <>

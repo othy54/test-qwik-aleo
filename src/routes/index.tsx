@@ -5,7 +5,7 @@ import styles from "./home.css?inline";
 
 import Header from "~/components/starter/header/header";
 import Lotties from "~/components/lotties/lotties.module";
-// import Footer from '~/components/starter/footer/footer';
+import Testimonial from "~/components/testimonial/testimonial.module";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -102,6 +102,59 @@ export default component$(() => {
       ],
       title: "Propulse ta visibilité et atteins tes objectifs",
     },
+
+    lottieCommunication: {
+      listLotties: ["team", "tarifs", "sans-engagement", "gestion-distance"],
+      list: [
+        {
+          title: "Une équipe d’experts à ton service",
+          content:
+            "Nos experts ALEO, spécialisés dans chaque domaine, s’imprègnent de ton identité pour t’accompagner dans tous tes projets.",
+        },
+        {
+          title: "Les meilleurs tarifs du marché",
+          content:
+            "Les solutions les plus attractives du marché pour garantir un accès à la communication à tous les professionnels.",
+        },
+        {
+          title: "Des offres sans engagement",
+          content:
+            "Pour communiquer en toute liberté, ALEO te permet d’adapter la durée de tes offres selon tes besoins et ton budget.",
+        },
+        {
+          title: "Une gestion à distance sur tout le territoire national",
+          content:
+            "Sur Terre (ou sur toute autre planète), l’ère du digital règne. Raison pour laquelle notre agence de communication met un point d’honneur à créer une relation sans frontières qui garantira ton plus grand confort.",
+        },
+      ],
+      title: "Crée le big bang dans ta communication",
+    },
+
+    ctaSteps: [
+      {
+        img: "https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683883492/etape-1_b8ahdu.png",
+        title: "Découverte",
+        content:
+          "Obtiens un RDV téléphonique gratuit de 10 à 15 minutes pour parler de ton projet",
+      },
+      {
+        img: "https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683883492/etape-2_d5txpv.png",
+        title: "Conseil",
+        content: "Proposition des offres les plus adaptés",
+      },
+      {
+        img: "https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683883492/etape-3_hghzun.png",
+        title: "Lancement",
+        content:
+          "3, 2, 1… Deviens Aleonaute et attache ta ceinture ! C’est le moment de propulser ton activité",
+      },
+      {
+        img: "https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683883492/etape-4_rnnzg4.png",
+        title: "Suivi",
+        content:
+          "Bénéficie d’un accompagnement personnalisé tout au long de ton projet",
+      },
+    ],
   });
 
   return (
@@ -314,11 +367,334 @@ export default component$(() => {
 
           <div class="row mt-40">
             <div class="container">
-
+              <Lotties
+                listLotties={state.lottieCommunication.listLotties}
+                list={state.lottieCommunication.list}
+                title={state.lottieCommunication.title}
+                label={"lottie-2"}
+                invert={true}
+              />
             </div>
           </div>
         </div>
       </section>
+
+      {/* SECTION ARTISAN  */}
+
+      <section class="-mt-10 hidden lg:block">
+        <Image
+          src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto,q_50/v1683874941/artisan.png"
+          class="w-full rounded-b-[56px] artisan-picture"
+          breakpoints={[1920, 2880]}
+          height={1105}
+          width={1905}
+          sizes="(max-width:1920px) 1920px, 2880px"
+          alt="artisan"
+        />
+      </section>
+
+      {/* SECTION SOLUTIONS  */}
+
+      <section class="section section-solutions mt-28">
+        <div class="row">
+          <div class="container">
+            <h2 class="italic font-black text-purple-brand text-center text-[32px] lg:text-[40px] leading-[110%]">
+              Nos offres clés en main <br class="hidden lg:block" /> et sans
+              engagement
+            </h2>
+            <div class="grid grid-cols-1 gap gap-20 md:gap-8 md:grid-cols-12 mt-20">
+              <div class="section-solutions__card md:col-span-7">
+                <div>
+                  <Image
+                    src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683875357/mockup-solution-1.png"
+                    breakpoints={[302, 538]}
+                    height={429}
+                    width={538}
+                    sizes="(max-width: 768px) 302px, 538px"
+                    alt="mockup pc"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="section-solutions__card-title">
+                    Site web et référencement
+                  </h3>
+                  <p class="section-solutions__card-text">
+                    Booste ton activité grâce à ton site internet vitrine clé en
+                    main.
+                  </p>
+                  <div class="section-solutions__card-link">
+                    <span>Découvrir</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-solutions__card md:col-span-5">
+                <div>
+                  <Image
+                    src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683875357/mockup-solution-2.png"
+                    breakpoints={[302, 414]}
+                    height={392}
+                    width={414}
+                    sizes="(max-width: 768px) 302px ,414px"
+                    alt="mockup pc"
+                  />
+                </div>
+                <div>
+                  <h3 class="section-solutions__card-title">
+                    Publicité sur Google
+                  </h3>
+                  <p class="section-solutions__card-text">
+                    Génère plus de contacts en passant de visible à
+                    incontournable.
+                  </p>
+                  <div class="section-solutions__card-link">
+                    <span>Découvrir</span>
+                  </div>
+                </div>
+              </div>
+              <div class="section-solutions__card md:col-span-5">
+                <div>
+                  <Image
+                    src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683875358/mockup-solution-3.png"
+                    breakpoints={[302, 628]}
+                    height={535}
+                    width={628}
+                    sizes="(max-width: 768px) 302px ,628px"
+                    alt="mockup pc"
+                  />
+                </div>
+                <div>
+                  <h3 class="section-solutions__card-title">Réseaux sociaux</h3>
+                  <p class="section-solutions__card-text">
+                    Développe ta notoriété et gagne en crédibilité pour attirer
+                    de nouveaux clients.
+                  </p>
+                  <div class="section-solutions__card-link">
+                    <span>Découvrir</span>
+                  </div>
+                </div>
+              </div>
+              <div class="section-solutions__card md:col-span-7">
+                <div>
+                  <Image
+                    src="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683875357/mockup-solution-4.png"
+                    breakpoints={[302, 399]}
+                    height={419}
+                    width={399}
+                    sizes="(max-width: 768px) 302px, 399px"
+                    alt="mockup pc"
+                  />
+                </div>
+                <div>
+                  <h3 class="section-solutions__card-title">Graphisme</h3>
+                  <p class="section-solutions__card-text">
+                    Laisse une image stratosphérique dans l’esprit de tes
+                    clients avec une identité visuelle unique.
+                  </p>
+                  <div class="section-solutions__card-link">
+                    <span>Découvrir</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION TESTIMONIAL  */}
+
+      <section class="section section-testimonial mt-52">
+        <div class="row">
+          <div class="container">
+            <Testimonial />
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION CTA  */}
+
+      <section class="section section-cta pt-40 pb-40 lg:pt-56 lg:pb-64 relative">
+        {/* <picture>
+            <source :srcset="bgAvif" type="image/avif" />
+            <source :srcset="bgWebp" type="image/webp" />
+            <img class="object-cover w-full absolute top-0 left-0 h-full z-[-1] lg:object-right"
+                src="../assets/images/bg-cta.png" alt="etapes" loading="lazy" width="1905" height="950" />
+        </picture> */}
+        <div class="row">
+          <div class="container">
+            <h2 class="italic font-black text-[40px] text-accent-500 text-center">
+              Choisir ALEO ?
+            </h2>
+            <p class="italic font-black text-[32px] text-accent-500 text-center mt-2">
+              Rien de plus simple :
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-11 lg:w-[80%] mx-auto mt-10">
+              {state.ctaSteps.map((step, i) => (
+                <div key={"step-" + i}>
+                  <Image
+                    src={step.img}
+                    breakpoints={[80]}
+                    height={97}
+                    width={80}
+                    sizes="80px"
+                    alt="mockup pc"
+                  />
+                  <p class="italic text-primary-500 font-black text-xl mt-4 text-center lg:text-left">
+                    {step.title}
+                  </p>
+                  <p class="font-medium text-accent-500 mt-4 text-center lg:text-left">
+                    {step.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <button class="mx-auto block mt-8 btn-primary">Je me lance</button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION FOOTER  */}
+
+      <footer>
+        <section class="section section-footer bg-purple-brand pt-16 pb-14 rounded-t-[40px] -mt-12 relative">
+          <div class="container">
+            <div class="row">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                  <img
+                    loading="lazy"
+                    src="/img/logo-aleo-slogan.svg"
+                    alt="logo aleo slogan"
+                    class="mx-auto lg:ml-0 lg:w-[340px]"
+                    width={340}
+                    height={116}
+                  />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                  <div>
+                    <p class="section-footer__list-title">Solutions</p>
+                    <ul class="section-footer__list-items">
+                      <li>Site web et sa visibilité</li>
+                      <li>Publicité sur Google</li>
+                      <li>Réseaux sociaux</li>
+                      <li>Logo et supports imprimés</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="section-footer__list-title">À propos</p>
+                    <ul class="section-footer__list-items">
+                      <li>ALEO</li>
+                      <li>L'équipage</li>
+                      <li>
+                        <a
+                          href="https://jobs.aleo.agency/"
+                          target="_blank"
+                          rel="noopener"
+                          aria-label="lien jobs"
+                        >
+                          ALEO Jobs
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="section-footer__list-title">En savoir +</p>
+                    <ul class="section-footer__list-items">
+                      <li>Témoignages</li>
+                      <li>
+                        <a
+                          href="https://blog.aleo.agency/"
+                          target="_blank"
+                          rel="noopener"
+                          aria-label="lien blog"
+                        >
+                          Blog
+                        </a>
+                      </li>
+                      <li>FAQ</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-10 lg:mt-16">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="lg:order-2">
+                  <p class="font-extrabold text-center lg:text-left text-white">
+                    Se lancer dans l’expérience ALEO dès maintenant
+                  </p>
+                </div>
+                <div class="lg:order-1">
+                  <div class="flex justify-center items-start lg:justify-start gap-x-8">
+                    <a
+                      href="https://www.facebook.com/aleo.agency/"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      aria-label="link facebook"
+                    >
+                      <img
+                        width="30"
+                        height="30"
+                        src="/img/facebook.svg"
+                        loading="lazy"
+                        alt="logo facebook"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/aleo.agency/?hl=fr"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      aria-label="link facebook"
+                    >
+                      <img
+                        width="30"
+                        height="30"
+                        src="/img/instagram.svg"
+                        loading="lazy"
+                        alt="logo instagram"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/aleo-agency/"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      aria-label="link linkedin"
+                    >
+                      <img
+                        width="30"
+                        height="30"
+                        src="/img/linkedin.svg"
+                        loading="lazy"
+                        alt="logo linkedin"
+                      />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UC4GBqxVpyYLiZGHRiA2RbPQ"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      aria-label="link youtube"
+                    >
+                      <img
+                        width="30"
+                        height="30"
+                        src="/img/youtube.svg"
+                        loading="lazy"
+                        alt="logo youtube"
+                      />
+                    </a>
+                  </div>
+                  <p class="font-medium text-sm text-white mt-5 text-center lg:text-left">
+                    2023 ALEO. Tous droits réservés — Mentions légales
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </>
   );
 });
