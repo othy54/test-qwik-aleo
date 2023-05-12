@@ -242,7 +242,7 @@ export default component$(() => {
         <div class="row mt-20">
           <div class="container">
             <p class="font-extrabold text-sm text-center uppercase text-accent-700 tracking-[0.08em]">
-              POUR BOOSTER TON ACTIVITÉ, TU PEUX :
+              POUR BOOSTER TON ACTIVITÉ, TU PEUX:
             </p>
             <div class="flex flex-wrap justify-center max-w-[850px] mx-auto gap-4 mt-10">
               {state.activities.map((activity, i) => (
