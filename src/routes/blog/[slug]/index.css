@@ -1,0 +1,35 @@
+:global(p:not(:last-child)) {
+    padding-bottom: 16px;
+}
+
+:global(p) {
+    @apply text-purple-brand;
+}
+
+:global(.container-article) {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+}
+
+:global(ul > li) {
+    list-style-type: disc;
+    margin-left: 16px
+}
+
+:global(ul) {
+    margin-bottom: 16px !important;
+}
+
+:global(img) {
+    width: 100%;
+}
+
+:global(h2) {
+   @apply text-primary-500;
+    font-size: 40px !important;
+    margin: 24px 0 16px 0 !important;
+    line-height: 110%;
+    font-weight: 700 !important;;
+
+}
