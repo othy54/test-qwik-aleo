@@ -12,7 +12,7 @@ export default component$(() => {
   const { params } = useLocation();
   const contents = useResource$<any>(async () => {
     const res = await fetch(
-      `https://nancomcy54-blogaleoapi.pf3000.wpserveur.net/wp-json/wp/v2/posts/${params.id}`
+      `https://nancomcy54-blogaleoapi.pf3000.wpserveur.net/wp-json/wp/v2/posts/${params.id}/`
     );
     const data = res.json();
     return data;
