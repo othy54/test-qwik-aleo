@@ -4,15 +4,15 @@ import {
   Resource,
   useStylesScoped$,
 } from "@builder.io/qwik";
-// import { useLocation } from "@builder.io/qwik-city";
+import { useLocation } from "@builder.io/qwik-city";
 import styles from "./index.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
-  // const { params } = useLocation();
+  const { params } = useLocation();
   const contents = useResource$<any>(async () => {
     const res = await fetch(
-      `https://nancomcy54-blogaleoapi.pf3000.wpserveur.net/wp-json/wp/v2/posts/5/`
+      `https://nancomcy54-blogaleoapi.pf3000.wpserveur.net/wp-json/wp/v2/posts/${params.id}`
     );
     const data = res.json();
     return data;
