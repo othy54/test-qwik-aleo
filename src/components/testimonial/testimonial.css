@@ -33,9 +33,3 @@
       line-height: 44px;
     }
   }
-
-  :global(.section-cta) {
-    background-image:url('https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683883929/bg-cta_x1gkrd.png');
-    background-position: center;
-    background-size: cover;
-  }

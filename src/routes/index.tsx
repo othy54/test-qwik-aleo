@@ -527,12 +527,6 @@ export default component$(() => {
       {/* SECTION CTA  */}
 
       <section class="section section-cta pt-40 pb-40 lg:pt-56 lg:pb-64 relative">
-        {/* <picture>
-            <source :srcset="bgAvif" type="image/avif" />
-            <source :srcset="bgWebp" type="image/webp" />
-            <img class="object-cover w-full absolute top-0 left-0 h-full z-[-1] lg:object-right"
-                src="../assets/images/bg-cta.png" alt="etapes" loading="lazy" width="1905" height="950" />
-        </picture> */}
         <div class="row">
           <div class="container">
             <h2 class="italic font-black text-[40px] text-accent-500 text-center">

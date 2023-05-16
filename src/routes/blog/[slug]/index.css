@@ -3,12 +3,13 @@
 }
 
 :global(p) {
-    @apply text-purple-brand;
+    @apply text-purple-brand font-medium;
+    font-size: 18px;
 }
 
 :global(.container-article) {
     width: 100%;
-    max-width: 1080px;
+    max-width: 900px;
     margin: 0 auto 0 auto;
 }
 
@@ -31,5 +32,16 @@
     margin: 24px 0 16px 0 !important;
     line-height: 110%;
     font-weight: 700 !important;;
+}
 
+:global(h3) {
+    @apply text-purple-brand;
+     font-size: 32px !important;
+     margin: 24px 0 16px 0 !important;
+     line-height: 42px;
+     font-weight: 800 !important;;
+ }
+
+:global(a) {
+    color: #FF4235 !important;
 }

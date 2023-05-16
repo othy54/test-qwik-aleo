@@ -243,6 +243,12 @@
     }
   }
 
+  :global(.section-cta) {
+    background-image:url('https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto/v1683883929/bg-cta_x1gkrd.png');
+    background-position: center;
+    background-size: cover;
+  }
+
 
   /* :global(.section-solutions__card:nth-child(1) img) {
     @apply translate-x-[-90px] translate-y-[-50px] lg:translate-y-0 xl:translate-x-[-120px] xl:origin-left xl:scale-[1.3]
