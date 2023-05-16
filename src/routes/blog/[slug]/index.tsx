@@ -12,7 +12,7 @@ export default component$(() => {
   const { params } = useLocation();
   const contents = useResource$<any>(async () => {
     const res = await fetch(
-      `https://nancomcy54-blogaleoapi.pf3000.wpserveur.net/wp-json/wp/v2/posts/${params.id}`
+      `https://nancomcy54-blogaleoapi.pf3000.wpserveur.net/wp-json/wp/v2/posts?slug=${params.slug}`
     );
     const data = res.json();
     return data;
@@ -27,10 +27,10 @@ export default component$(() => {
               return (
                 <>
                   <h1 class="text-[56px] italic leading-[110%] font-extrabold text-primary-500 mb-8">
-                    {post.title.rendered}
+                    {post[0].title.rendered}
                   </h1>
                   <div>
-                    <p dangerouslySetInnerHTML={post.content.rendered}></p>
+                    <p dangerouslySetInnerHTML={post[0].content.rendered}></p>
                   </div>
                 </>
               );

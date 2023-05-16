@@ -41,12 +41,12 @@ export default component$(() => {
                     />
 
                     <h2 class="text-2xl mt-6 font-semibold text-primary-500">
-                      <a href={post.id}>{post.title.rendered}</a>
+                      <a href={post.slug}>{post.title.rendered}</a>
                     </h2>
                     <div class="mt-4 text-purple-brand font-medium">
                       <p dangerouslySetInnerHTML={post.excerpt.rendered}></p>
                     </div>
-                    <a href={post.id} class="font-semibold text-primary-500">
+                    <a href={post.slug} class="font-semibold text-primary-500">
                       Lire plus
                     </a>
                   </div>
