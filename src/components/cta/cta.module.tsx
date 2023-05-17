@@ -33,6 +33,7 @@ export default component$(() => {
   });
 
   useVisibleTask$(() => {
+    // @ts-expect-error
     import("../../assets/images/bg-cta.png?format=webp").then(
       ({ default: Image }) => {
         state.bgCta = Image;
