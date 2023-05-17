@@ -35,13 +35,12 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <QwikPartytown forward={["dataLayer.push"]} />
+        <script async type="text/partytown" dangerouslySetInnerHTML={script} />
         <script
-          defer
           async
           type="text/partytown"
-          dangerouslySetInnerHTML={script}
-        />
-        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KTZZC5K"></script>
+          src="https://www.googleoptimize.com/optimize.js?id=OPT-KTZZC5K"
+        ></script>
 
         <RouterHead />
       </head>
