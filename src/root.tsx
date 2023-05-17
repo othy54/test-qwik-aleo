@@ -33,11 +33,6 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <head>
-        <link
-          rel="preload"
-          href="https://res.cloudinary.com/dhnxwmjgn/image/upload/f_auto,q_60,w_350/v1683726098/denis-hero-home.png"
-          as="image"
-        ></link>
         <meta charSet="utf-8" />
         <QwikPartytown forward={["dataLayer.push"]} />
         <script
