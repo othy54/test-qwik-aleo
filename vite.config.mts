@@ -12,8 +12,9 @@ export default defineConfig(() => {
     plugins: [
       qwikCity(),
       qwikVite(),
-      tsconfigPaths(),
       imagetools(),
+      tsconfigPaths(),
+
       partytownVite({ dest: join(__dirname, "dist", "~partytown") }),
     ],
     preview: {
