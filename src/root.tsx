@@ -41,6 +41,7 @@ export default component$(() => {
           type="text/partytown"
           dangerouslySetInnerHTML={script}
         />
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KTZZC5K"></script>
 
         <RouterHead />
       </head>
