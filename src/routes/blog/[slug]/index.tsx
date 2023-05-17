@@ -1,9 +1,4 @@
-import {
-  component$,
-  // useResource$,
-  // Resource,
-  useStylesScoped$,
-} from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./index.css?inline";
