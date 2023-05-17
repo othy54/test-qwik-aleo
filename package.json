@@ -42,7 +42,7 @@
     "typescript": "5.0.4",
     "undici": "5.22.0",
     "vite": "4.3.5",
-    "vite-imagetools": "^5.0.4",
+    "vite-imagetools": "^4.0.19",
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
