@@ -9,6 +9,11 @@ import Testimonial from "~/components/testimonial/testimonial.module";
 import Cta from "~/components/cta/cta.module";
 
 export default component$(() => {
+  // useVisibleTask$(() => {
+  //   gsap.set(".transition-el", {
+  //     clipPath: "inset(0 100% 0 0)",
+  //   });
+  // });
   useStylesScoped$(styles);
   const state = useStore({
     newspapers: [

@@ -1,4 +1,4 @@
-import { component$, useVisibleTask$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -6,8 +6,6 @@ import {
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 import { QwikPartytown } from "./components/partytown/partytown";
-import barba from "@barba/core";
-import { animate } from "motion";
 
 import "@fontsource/nunito/400.css";
 import "@fontsource/nunito/500.css";
@@ -19,39 +17,6 @@ import "@fontsource/nunito/900-italic.css";
 import "./global.css";
 
 export default component$(() => {
-  useVisibleTask$(() => {
-    barba.init({
-      transitions: [
-        {
-          leave() {
-            return new Promise((resolve) => {
-              animate(".transition-el", {
-                clipPath: "inset(0 0% 0 0%)",
-              }).finished.then(resolve);
-            });
-          },
-          Enter() {
-            return new Promise((resolve) => {
-              animate(".transition-el", {
-                clipPath: "inset(0 0% 0 100%)",
-              }).finished.then(resolve);
-            });
-          },
-          // enter() {
-          //   return animate(
-          //     ".transition-el",
-          //     {
-          //       clipPath: "inset(0 0% 0 100%)",
-          //     },
-          //     {
-          //       duration: 1,
-          //     }
-          //   );
-          // },
-        },
-      ],
-    });
-  });
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,
    * immediately followed by the document's <head> and <body>.
